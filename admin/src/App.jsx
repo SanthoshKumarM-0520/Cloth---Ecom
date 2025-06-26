@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import Login from "./pages/Login";
 import { ToastContainer, toast } from "react-toastify";
 
-export const backendUrl = import.meta.env.VITE_BACKEND_URL;
+export const backendUrl = "https://looma-backend-ferx.onrender.com";
 export const currency = "$";
 
 const App = () => {

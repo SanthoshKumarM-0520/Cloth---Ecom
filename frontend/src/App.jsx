@@ -13,7 +13,7 @@ import Orders from "./pages/Orders";
 import Footer from "./components/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import Profile from "./pages/Profile";
-export const backendUrl = import.meta.env.VITE_BACKEND_URL;
+export const backendUrl = "https://looma-backend-ferx.onrender.com";
 
 const App = () => {
   return (
