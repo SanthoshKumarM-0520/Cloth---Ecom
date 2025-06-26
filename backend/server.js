@@ -19,11 +19,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 connectDatabase()
 configCloudinary()
-const corsConfig = {
-    origin: "*",
-    Credential: true,
-    methods: ["GET", "POST", "DELETE", "PUT", "PATCH"]
-}
+
 
 //Initial Product Data 
 //insertData()
@@ -41,8 +37,7 @@ app.use("/images", express.static(staticFile))
 
 //Middleware
 app.use(express.json());
-app.options("", cors(corsConfig))
-app.use(cors(corsConfig));
+app.use(cors());
 
 //Api Endpoint
 app.use("/api/v1/user", userRoute)
