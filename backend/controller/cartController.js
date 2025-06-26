@@ -1,4 +1,3 @@
-import { status } from "init";
 import User from "../models/userModels.js";
 
 const addToCart = async (req, res) => {
